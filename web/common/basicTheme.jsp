@@ -4,15 +4,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <title></title>
+        <link rel="stylesheet" type="text/css" href="/AngularDemo/css/bootstrap.min.css"></link>
         <script type="text/javascript" src="/AngularDemo/js/angular.min.js"></script>
         <script type="text/javascript" src="/AngularDemo/js/ocLazyLoad.js"></script>
     </head>
     <div id="mainApp">
         <h6>Header</h6>
         <p><b>Navigation</b></p>
-        <a href="#/AngularDemo/pages/users.jsp">Users</a>
+<!--        <a href="#/AngularDemo/pages/users.jsp">Users</a>
         <a href="#/AngularDemo/pages/doctors.jsp">Doctors</a>
-        <a href="#/AngularDemo/pages/facilties.jsp">Facilities</a>
+        <a href="#/AngularDemo/pages/facilties.jsp">Facilities</a>-->
         <hr />
         <div ng-view ></div>
         <decorator:body />

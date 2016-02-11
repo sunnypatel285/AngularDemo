@@ -2,4 +2,5 @@
 
 <decorators>
     <decorator name="basicTheme" page="/common/basicTheme.jsp"></decorator>
+    <decorator name="progressnoteTemplate" page="/common/postloadHook.jsp"></decorator>
 </decorators>

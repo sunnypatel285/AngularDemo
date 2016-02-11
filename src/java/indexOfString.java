@@ -27,6 +27,10 @@ public class indexOfString {
         }
         return false;
     }
+    
+    public void test(){
+        
+    }
 }
 
 class TechnoSample {

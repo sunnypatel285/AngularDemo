@@ -5,7 +5,7 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!--<meta name="decorator" content="basicTheme" />-->
+<meta name="decorator" content="progressnoteTemplate" />
         <div>
             <div ng-controller="userCtrl">
                 Name : <input type="text" ng-model="txtName"/>
@@ -16,7 +16,7 @@
                         <td>Name</td>
                         <td>Address</td>
                     </tr>
-                    <tr ng-repeat="emp in empObj| orderBy:'name'">
+                    <tr ng-repeat="emp in empObj| filter:txtName">
                         <td>{{emp.id}}</td>
                         <td>{{emp.name| uppercase}}</td>
                         <td>{{emp.Address}}</td>
