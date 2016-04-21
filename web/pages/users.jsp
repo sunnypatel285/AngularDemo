@@ -10,13 +10,13 @@
             <div ng-controller="userCtrl">
                 Name : <input type="text" ng-model="txtName"/>
                 Hello, {{txtName}}
-                <table>
+                <table border="1">
                     <tr>
                         <td>Id</td>
                         <td>Name</td>
                         <td>Address</td>
                     </tr>
-                    <tr ng-repeat="emp in empObj| filter:txtName">
+                    <tr ng-repeat="emp in empObj track by $index| filter:txtName">
                         <td>{{emp.id}}</td>
                         <td>{{emp.name| uppercase}}</td>
                         <td>{{emp.Address}}</td>
